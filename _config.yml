@@ -20,11 +20,9 @@ author: Team MiaouMiaou
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About : "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - The dataset: "https://snap.stanford.edu/data/wikispeedia.html"
 
 ################
 # --- Logo --- #
