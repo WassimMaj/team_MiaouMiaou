@@ -4,10 +4,12 @@ title: Blue Click, Red Click 🖱️
 subtitle: Decoding the matrix behind the political bias of Wikispeedia
 cover-img: /assets/img/berlin.jpg
 ---
-### Introduction: {#top}
+### Introduction {#top}
 
 Today, Wikipedia is part of everybody’s life. It is the first source that most people will check when they want to get information. This website is maintained by volunteers through open collaboration, and what makes its strength, can also bring problems. Wikipedia aims to have a neutral point of view and stay strictly factual but can we guarantee this when anyone can become a contributor ? A study [<sup>[1]</sup>](#ref) observed that a large number of Wikipedia editors change their behavior and focus on editing controversial topics when promoted to administrators, they might be biased (consciously or not) and influence these articles. Our study aims to examine the political bias within Wikipedia and its potential impact on Wikispeedia players, a game where participants try to navigate to a specific article solely using hyperlinks within the current article. This game aims to characterize semantic distances between concepts [<sup>[3]</sup>](#ref). This will allow us to see if this semantic distance is influenced by bias.
-
+  
+  
+<mark> Introduire le dataset / ce qu'il a dedans  ??</mark>
 
 ### What about Political bias and political figures in wikispeedia ?
 Firstly, let’s define political bias : this refers to a tendency to orient or modify information to make a political position more attractive. To define that, plain text of the articles was assessed in relation to two other well-known sites that reproduce wikipedia in a politically biased way: [Rationalwiki](https://rationalwiki.org/wiki/Main_Page) and [Infogalactic](https://infogalactic.com/info/Main_Page). According to [Media Bias/Fact check](https://mediabiasfactcheck.com/), these websites are respectively recognized as having a left-wing and right-wing bias. After training a machine learning model (BERT with SVM) on data scraped from these websites, Wikispeedia articles are classified according the bias they contain. The results are shown below: 
@@ -42,7 +44,7 @@ It looks like blabla (développer sur le graph)
 ### Analysis of the players
 
 We will now take a look at Wikispeedia’s player’s behaviors.
-<mark> introduire plots 3bi et 3bii </mark>
+<mark> introduire/décrire plots 3bi et 3bii </mark>
 
 
 
@@ -57,7 +59,11 @@ How does the bias of current article impact the next step in the path ?
 
 {% include bias_n_3b3.html %}
 
-If we at each step we picked a random article, we would get proportions that roughly match the overall distribution of the dataset 
+If we at each step we picked a random article, we would get proportions that roughly match the overall distribution of the dataset (the solid line on the graph). We can clearly see a difference <mark> ** Do a statistical test ** </mark>. 
+People tend to pick articles with a right bias or no bias more than expected, and less articles with a left bias, no matter what article they come from. Do people tend to avoid articles with a left-leaning bias ? 
+
+We cannot say for sure ; other parameters can come into play. For example, do articles link to different kind of articles depending on their bias ? 
+<mark> Faire un plot sur les biais des articles linké par rapport au biais de l'article sur lequel on est ? </mark>
 
 
 ### Conclusion
