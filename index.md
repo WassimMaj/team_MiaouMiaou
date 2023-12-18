@@ -18,12 +18,12 @@ Firstly, let’s define political bias : this refers to a tendency to orient or 
 
 {% include repart_bias_2a1.html %}
 
-We can see that most of articles in Wikispeedia are similar to Infogalactic and therefore classified as right wing.
+We can see that most of articles in Wikispeedia are similar to Infogalactic and therefore classified as <span style="color: lightblue">right</span> wing.
 Is this repartition equal through each categories of articles ? 
 
 {% include repart_bias_categ_2a2.html %}
 
-Even though most categories have a clear majority of articles with a right bias, in a few categories, such as chemistry or railway transport, they account for less than 50%. <mark>Jsais pas si y’a plus à dire</mark>
+Even though most categories have a clear majority of articles with a <span style="color: lightblue">right</span> bias, in a few categories, such as chemistry or railway transport, they account for less than 50%. <mark>Jsais pas si y’a plus à dire</mark>
 Let’s now take a look at the political people whose articles are in Wikispeedia. We determined theit political affiliation and the results are shown below. 
 
 {% include repart_bias_pol_2a3_1.html %}
@@ -64,7 +64,7 @@ How does the bias of current article impact the next step in the path ?
 {% include bias_n_3b3.html %}
 
 If we at each step we picked a random article, we would get proportions that roughly match the overall distribution of the dataset (the solid line on the graph). We can clearly see a difference <mark> ** Do a statistical test ** </mark>. 
-People tend to pick articles with a right bias or no bias more than expected, and less articles with a left bias, no matter what article they come from. Do people tend to avoid articles with a left-leaning bias ? 
+People tend to pick articles with a <span style="color: lightblue">right</span> bias or no bias more than expected, and less articles with a <span style="color: lightcoral">left</span> bias, no matter what article they come from. Do people tend to avoid articles with a <span style="color: lightcoral">left</span>-leaning bias ? 
 
 We cannot say for sure ; other parameters can come into play. For example, do articles link to different kind of articles depending on their bias ? 
 <mark> Faire un plot sur les biais des articles linké par rapport au biais de l'article sur lequel on est ? </mark>
