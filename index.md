@@ -12,7 +12,7 @@ Today, Wikipedia is part of everybody’s life. It is the first source that most
 ### What about Political bias and political figures in wikispeedia ?
 Firstly, let’s define political bias : this refers to a tendency to orient or modify information to make a political position more attractive. To define that, plain text of the articles was assessed in relation to two other well-known sites that reproduce wikipedia in a politically biased way: [Rationalwiki](https://rationalwiki.org/wiki/Main_Page) and [Infogalactic](https://infogalactic.com/info/Main_Page). According to [Media Bias/Fact check](https://mediabiasfactcheck.com/), these websites are respectively recognized as having a left-wing and right-wing bias. After training a machine learning model (BERT with SVM) on data scraped from these websites, Wikispeedia articles are classified according the bias they contain. The results are shown below: 
 
-<mark>inclure plot camembert ‘political biais repartition’ (2.a.1) </mark>
+{% include repart_bias_2a1.html %}
 
 We can see that most of articles in Wikispeedia are similar to Infogalactic and therefore classified as right wing.
 Is this repartition equal through each categories of articles ? 
