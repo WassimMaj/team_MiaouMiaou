@@ -48,8 +48,9 @@ We will now take a look at Wikispeedia’s player’s behaviors.
 
 {% include repart_pol_path_3b1.html %}
 
+<p align="center">
 <img src="assets/img/dolf.gif" alt="No"/>
-
+</p>
 
 
 How does the bias of current article impact the next step in the path ?
