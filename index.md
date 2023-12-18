@@ -55,7 +55,7 @@ We will now take a look at Wikispeedia’s player’s behaviors.
 </p>
 
 #### But is it Statistically significant ?
-After performing a t-test on the political figures we can confirm that it is statistically significant as our p-value is close to 0 (1 x 10<sup>-62</sup>)
+After performing a t-test on the political figures we can confirm that it is statistically significant as our p-value is close to 0 (1 x 10<sup>-62</sup>).
 
 How does the bias of current article impact the next step in the path ?
 
