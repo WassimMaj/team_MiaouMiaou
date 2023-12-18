@@ -11,16 +11,22 @@ Today, Wikipedia is part of everybody's life. It is the first source that most p
 
 Firstly, let's define a political bias : this refers to a tendency to orient or modify information to make a political position more attractive.
 To define that, plain text of the articles was assessed in relation to two other well-known sites that reproduce wikipedia in their own way: Rationalwiki for the left wing and Infogalactic for the right wing. After training a machine learning model (BERT with SVM) on these data, wikispeedia articles are used to define the bias they contain. The results are shown below: 
-inclure plot camembert ‘political biais repartition’ (2.a.1)
+
+{% include repart_bias_2a1.html %}
+
 We can see that most of articles in wikispeedia are similar to Infogalactic and then classified as right wing. 
 
 With this we can see if there is some category in wikispeedia that might be more biased in a way than other.
-inclure plot category with political biases (2.a.2)
+
+{% include repart_bias_categ_2a2.html %}
+
 Can we conclude something with this graph ?
 
 Then, we defined the political parties of the political figures present in the wikispeedia game. 
-inclure plot des différentes affiliations politique selon catégories (2.a.3)
 
+{% include repart_bias_pol_2a3_1.html %}
+
+{% include repart_bias_pol_2a3_2.html %}
 
 
 
@@ -30,6 +36,14 @@ inclure plot des différentes affiliations politique selon catégories (2.a.3)
 Having explored the political biases in Wikispeedia articles, we now understand that these biases might permeate the content we consume daily. This raises a crucial question: How do these biases translate into interactive online environments, specifically in games like Wikispeedia? In the next section, we delve into the Wikispeedia Analysis to investigate whether the potential biases in Wikipedia articles affect the way players navigate through this game. 
 
 3. Wikispeedia Analysis 
+
+{% include repart_bias_araigne_3a.html %}
+
+{% include repart_pol_path_3b1.html %}
+
+inclure le graph 3b2
+
+{% include bias_n_3b3.html %}
 
 4. Conclusion 
 
