@@ -6,7 +6,7 @@ cover-img: /assets/img/berlin.jpg
 ---
 ### Introduction: 
 
-Today, Wikipedia is part of everybody’s life. It is the first source that most people will check when they want to get information. This website is maintained by volunteers through open collaboration, and what makes its strength, can also bring problems. Wikipedia aims to have a neutral point of view and stay strictly factual but can we guarantee this when anyone can become a contributor ? (Das & Lavoie, 2016) observed that a large number of Wikipedia editors change their behavior and focus on editing controversial topics when promoted to administrators, they might be biased (consciously or not) and influence these articles. Our study aims to examine the political bias within Wikipedia and its potential impact on Wikispeedia players, a game where participants try to navigate to a specific article solely using hyperlinks within the current article. This game aims to characterize semantic distances between concepts (West et al., 2009). This will allow us to see if this semantic distance is influenced by bias.
+Today, Wikipedia is part of everybody’s life. It is the first source that most people will check when they want to get information. This website is maintained by volunteers through open collaboration, and what makes its strength, can also bring problems. Wikipedia aims to have a neutral point of view and stay strictly factual but can we guarantee this when anyone can become a contributor ? A study[^1] observed that a large number of Wikipedia editors change their behavior and focus on editing controversial topics when promoted to administrators, they might be biased (consciously or not) and influence these articles. Our study aims to examine the political bias within Wikipedia and its potential impact on Wikispeedia players, a game where participants try to navigate to a specific article solely using hyperlinks within the current article. This game aims to characterize semantic distances between concepts (West et al., 2009). This will allow us to see if this semantic distance is influenced by bias.
 
 
 ### What about Political bias and political figures in wikispeedia ?
@@ -39,14 +39,29 @@ Having explored the political biases in Wikispeedia articles, we now understand 
 
 It looks like blabla (développer sur le graph)
 
+### Analysis of the players
+
+We will now take a look at Wikispeedia’s player’s behaviors.
+<mark> introduire plots 3bi et 3bii </mark>
+
+
+
 {% include repart_pol_path_3b1.html %}
 
 
+
+How does the bias of current article impact the next step in the path ?
+
 {% include bias_n_3b3.html %}
 
+If we at each step we picked a random article, we would get proportions that roughly match the overall distribution of the dataset 
 
 
 ### Conclusion
  
 
 
+
+
+#### References
+[^1] : Das, S., Lavoie, A., & Magdon-Ismail, M. (2016). Manipulation among the arbiters of collective intelligence: How Wikipedia administrators mold public opinion. ACM Transactions on the Web (TWEB), 10(4), 1-25.
