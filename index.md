@@ -48,7 +48,7 @@ We will now take a look at Wikispeedia’s player’s behaviors.
 
 {% include repart_pol_path_3b1.html %}
 
-{% include dolf.gif %}
+<img src="assets/img/dolf.gif" alt="No"/>
 
 
 
