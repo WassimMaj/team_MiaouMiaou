@@ -124,6 +124,10 @@ navbar-var-length: false
 # --- Colours / background image --- #
 ######################################
 
+
+# add image to the right and to the left : 
+![Image à gauche]("/assets/img/307464-3840x2160-desktop-4k-the-matrix-wallpaper-photo.jpg")
+
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
 navbar-col: "#EAEAEA"
