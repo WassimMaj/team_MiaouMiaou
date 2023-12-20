@@ -29,7 +29,7 @@ But does this mean that articles in Wikispeedia are biased ? It is too early to 
 A good way to understand this bias is to look the repartition through each categories of articles to see if there is a notable difference.
 
 
-<p align="center">
+<p align="left">
 {% include repart_bias_categ_2a2.html %}
 </p>
 
