@@ -25,9 +25,14 @@ Firstly, let’s define political bias : this refers to a tendency to orient or 
 
 We can see that most of articles in Wikispeedia are similar to Infogalactic and therefore classified as <span style="color: lightblue">right</span> wing.
 
-But does this mean that articles in Wikispeedia are biaseed ? It is too early to say that, we need to go deeper inside our data. A good way to understand this bias is to look the repartition through each categories of articles to see if there is a notable difference.
+But does this mean that articles in Wikispeedia are biased ? It is too early to say that, we need to go deeper inside our data.<mark> en soi selon notre model, la réponse c'est clairement oui ahaha </mark>
+A good way to understand this bias is to look the repartition through each categories of articles to see if there is a notable difference.
 
+
+<p align="center">
 {% include repart_bias_categ_2a2.html %}
+</p>
+
 
 Even though most categories have a clear majority of articles with a <span style="color: lightblue">right</span> bias, in a few categories, such as chemistry or railway transport, they account for less than 50%. <mark>Jsais pas si y’a plus à dire</mark>
 <mark>Oui toujours des trucs à dire</mark>
