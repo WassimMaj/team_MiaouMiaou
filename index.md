@@ -67,7 +67,7 @@ We correlate these metrics with the political bias of articles on the plot below
 <mark>(about that, pourquoi on normalise aussi les percentage backlicks et finished/unfinished si c’est des % de base, donc de 0 à 1 ?) </mark>
 <mark>Les valeurs sur le graphs quand o passe la souris devraient etre les moyennes <mark>
 
-Well, this graph is iteresting. There are significant differences in the way people navigate through wikipedia depending on the bias of the article. 
+Well, this graph is interesting. There are significant differences in the way people navigate through wikipedia depending on the bias of the article. 
 The graph clearly shows that paths originating from articles with a left-leaning bias tend to be abandoned more frequently, suggesting that players often give up the game when encountering these articles. This might be attributed to difficulties in finding relevant information, leading to confusion. This theory is supported by the observation that the average time spent on left-biased articles is longer compared to those with right or center biases. Additionally, paths featuring a higher proportion of right-leaning articles are associated with more successful game outcomes, indicated by better ratings. However, it's important to consider that right-biased articles also exhibit a higher frequency of back-clicks, implying that users often do not find the information they initially sought.
 
 This analysis is valuable as it offers preliminary insights into how biases in Wikipedia articles might influence user navigation behavior, revealing preferences in information seeking.
@@ -81,7 +81,7 @@ Here are the articles the most choosed by the players :
 
 <mark>ajouter le graph avec les articles les plus choisis au debut et à la fin (finished path) <mark>
 
-Those articles are all very stantard but the something caught our attention in the graph.. Let's look take a look at the first and last article chosen by players but only the political people. Is there a tendency to choose more right people or left people?
+Those articles are all very stantard but something caught our attention in the graph.. Let's look take a look at the first and last article chosen by players but only for the political people category. Is there a tendency to choose more right-wing people or left-wing people?
 
 {% include repart_pol_path_3b1.html %}
 
