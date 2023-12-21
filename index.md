@@ -147,8 +147,8 @@ We cannot say for sure ; other parameters can come into play. For example, do ar
 {: .text-justify}
 
 {% include boxplot_left.html %}
-{% include boxplot_right.html %}
 {% include boxplot_center.html %}
+{% include boxplot_right.html %}
 
 ### Conclusion
 
