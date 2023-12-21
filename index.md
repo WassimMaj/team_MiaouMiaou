@@ -24,10 +24,12 @@ Firstly, let’s define political bias : this refers to a tendency to orient or 
 
 {% include repart_bias_2a1.html %}
 
-We can see that most of articles in Wikispeedia are similar to Infogalactic and therefore classified as <span style="color: lightblue">right</span> wing.{: .text-justify}
+We can see that most of articles in Wikispeedia are similar to Infogalactic and therefore classified as <span style="color: lightblue">right</span> wing.
+{: .text-justify}
 
 But does this mean that articles in Wikispeedia are biased ? It is too early to say that, we need to go deeper inside our data.<mark> en soi selon notre model, la réponse c'est clairement oui ahaha </mark>
 A good way to understand this bias is to look the repartition through each categories of articles to see if there is a notable difference.
+{: .text-justify}
 
 
 <p align="left">
@@ -35,7 +37,8 @@ A good way to understand this bias is to look the repartition through each categ
 </p>
 
 
-Even though most categories have a clear majority of articles with a <span style="color: lightblue">right</span> bias, in a few categories, such as chemistry or railway transport, they account for less than 50%. {: .text-justify}
+Even though most categories have a clear majority of articles with a <span style="color: lightblue">right</span> bias, in a few categories, such as chemistry or railway transport, they account for less than 50%. 
+{: .text-justify}
 
 It seems that article categories can have a link with the political bias in the way they are written. It can be for many reasons but our hypothesis is that it come from the article' authors. Let's think about it. Wikipedia is collaborative website where anyone can write or complete articles. Who takes personal time to write an article on wikipedia ? It has to be people passionated or at least very interested in the subject. In this case, a Ukrainian interested in painting from that time period would be more suceptible to write an article.
 {: .text-justify}
@@ -86,6 +89,7 @@ We will now delves deeper into the specific choices players make.
 ### Analysis of the players
 
 In the Wikispeedia game, the first decision players face is selecting their starting article and determining their destination article. Let's first turn our attention to this aspect of the game. 
+{: .text-justify}
 
 Here are the articles the most choosed by the players : 
 
@@ -111,12 +115,15 @@ After performing a t-test on the political figures we can confirm that it is sta
 This strongly suggests that the choice of Adolf Hitler as a starting or ending point in the game is not merely a coincidence or a random occurrence. It looks like there is a specific interest or focus on this particular historical figure within the Wikispeedia gaming community. But why Adolf Hitler and not Napoleon or Jules Cesar ? With our team we thought that it can be due to media and the Pop Culture. Hitler and the Nazi regime have been extensively depicted in movies, documentaries, books, and on internet, keeping his memory alive in the public consciousness. Also Hitler is synonymous with extreme ideologies, genocide, and war. Controversial figures often attract more attention, as people seek to understand the motivations and circumstances behind their actions.
 {: .text-justify}
 
-For a Wikispeedia player, it can be fun to make the link between a random topic and Adolf Hitler, which represents a challenge in connecting seemingly unrelated extreme subjects.{: .text-justify}
+For a Wikispeedia player, it can be fun to make the link between a random topic and Adolf Hitler, which represents a challenge in connecting seemingly unrelated extreme subjects.
 It's important to note that interest in such a figure does not necessarily equate to support or admiration.
+{: .text-justify}
+
 
 
 Having gained insights into the initial and final articles chosen by players in Wikispeedia, we now shift our focus to the in-game decisions made during the course of play. Specifically, we aim to explore 
 How does the bias of current article impact the next step in the path ?
+{: .text-justify}
 
 To answer that we are going to make the following analysis: We'll select a random article from within a player's path and identify its political bias. Then, we will investigate if the next articles chosen by the player tends to align with the same political bias. The key aspect of this analysis is to determine if there's a pattern where players consistently navigate to articles with similar biases, or if the transition from one article to the next reflects a distribution that roughly matches the overall proportions of biases present in our dataset, as represented by the solid line on our graph.
 {: .text-justify}
@@ -129,13 +136,16 @@ To answer that we are going to make the following analysis: We'll select a rando
 
 People tend to pick articles with a <span style="color: lightblue">right</span> bias or no bias more than expected, and less articles with a <span style="color: lightcoral">left</span> bias, no matter what article they come from. Do people tend to avoid articles with a <span style="color: lightcoral">left</span>-leaning bias ? 
 We cannot say for sure ; other parameters can come into play. For example, do articles link to different kind of articles depending on their bias ? 
+{: .text-justify}
 
 
 ### Conclusion
 
 Our exploration into the realm of political biases in Wikipedia and their potential influence on Wikispeedia players has led us to some intriguing observations. There seems to be a pattern where players' choices within the game are influenced by the political tone of the articles. This trend is suggested by the tendency of players to choose certain types of articles more frequently, and how their subsequent selections might align with specific political leanings. 
+{: .text-justify}
 
 However, it's crucial to remember that these are initial observations and not absolute conclusions. Our determinations of the political affiliations of articles are based on a model we created, which, while useful, does not offer 100% accuracy.
+{: .text-justify}
 
 Acknowledging the exploratory nature of our study, it's evident that further research is necessary. A broader dataset would be invaluable in deepening our understanding of the nuances in player behavior and the motivations behind their choices. Future investigations could aim to more accurately determine how these observed biases in navigation might reflect larger patterns in how people interact with information online, particularly in politically sensitive contexts.
 {: .text-justify}
