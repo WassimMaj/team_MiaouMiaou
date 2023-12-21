@@ -4,7 +4,7 @@ title: Blue Click, Red Click
 subtitle: Decoding the matrix behind the political bias of Wikispeedia
 cover-img: /assets/img/background.png
 ---
-### Introduction {#top}
+## Introduction {#top}
 
 Today, Wikipedia is part of everybody’s life. It is the first source that most people will check when they want to get information. This website is maintained by volunteers through open collaboration, and what makes its strength, can also bring problems. Wikipedia aims to have a neutral point of view and stay strictly factual but can we guarantee this when anyone can become a contributor? A study [<sup>[1]</sup>](#ref) observed that a large number of Wikipedia editors change their behavior and focus on editing controversial topics when promoted to administrators, they might be biased (consciously or not) and influence these articles. This concern about bias in Wikipedia content leads us to consider how such biases might extend to user interactions with the platform, such as through the WikiSpeedia game.  
 {: .text-justify}
@@ -16,7 +16,7 @@ WikiSpeedia is a game where players are tasked with navigating from one Wikipedi
 Our dataset is an extensive collection derived from the Wikispeedia game, featuring detailed records of how players moved from one Wikipedia article to another, a process we'll refer to as 'the path' in our subsequent analysis. This dataset encompasses 4,604 Wikipedia articles as they existed in 2009<mark>date a verifier je me rappel plus</mark>, meticulously documenting user navigation and thereby shedding light on patterns in the pursuit of information. It also captures the duration users spend on these paths, providing a window into their engagement levels and the complexity of the topics encountered. Furthermore, the dataset includes categorizations for each article, facilitating focused studies across a variety of knowledge areas. This rich, layered dataset serves as the foundation for our investigation into potential political biases in Wikipedia's content.
 {: .text-justify}
 
-### What about political bias and political figures in wikispeedia ?
+## What about political bias and political figures in wikispeedia ?
 Firstly, let’s define political bias : this refers to a tendency to orient or modify information to make a political position more attractive. To define that, plain text of the articles was assessed in relation to two other well-known sites that reproduce Wikipedia in a politically biased way: [Rationalwiki](https://rationalwiki.org/wiki/Main_Page) and [Infogalactic](https://infogalactic.com/info/Main_Page). According to [Media Bias/Fact check](https://mediabiasfactcheck.com/), these websites are respectively recognized as having a <span style="color: lightcoral">left-wing</span>
  and <span style="color: lightblue">right-wing</span>
  bias. After training a machine learning model (BERT with SVM) on data scraped from these websites, Wikispeedia articles are classified according the bias they contain. The results are shown below: 
@@ -91,7 +91,7 @@ In the Wikispeedia game, the first decision players face is selecting their star
 
 Here are the articles the most choosen by the players : 
 
-<mark>ajouter le graph avec les articles les plus choisis au debut et à la fin (finished path) <mark>
+{% include top25_pages_finished_paths.html %}
 
 Those articles are all very standard but something caught our attention in the graph.. Let's look take a look at the first and last article chosen by players but only for the political people category. Is there a tendency to choose more right-wing people or left-wing people?
 {: .text-justify}
@@ -120,27 +120,27 @@ It's important to note that interest in such a figure does not necessarily equat
 Having gained insights into the initial and final articles chosen by players in Wikispeedia, we now shift our focus to the in-game decisions made during the course of play. 
 {: .text-justify}
 
+### Do people tend to go more on right or left biased articles ?
+
 The graph below displays the distribution of article biases chosen by players during their navigation paths:
 {: .text-justify}
 
 {% political_bias_repartition_in_the_paths.html %}
 
+
 As anticipated, the paths contain a higher proportion of right-biased articles, reflecting the overall greater presence of right-leaning content in the dataset.
 {: .text-justify}
 
-<mark> ** Do a statistical test ** </mark>.
+But is it sigificant ? The chi-squared test revealed a statistically significant difference in the distribution of political biases ('right', 'center', 'left') between the two datasets, with a chi-squared statistic of 185.81 and a p-value very close to 0 (4.49 * 10^-41). Despite the seemingly modest changes in the percentage between the datasets, the very low p-value indicates that the observed distribution of biases in the paths is highly unlikely to have occurred by random chance, suggesting a genuine difference in the distribution of political biases between the overall articles and the articles in the paths. 
+The large sample size and consistent distribution across categories contribute to the high statistical significance of this difference. We will now focus on the link between a biased article and the next one.
 
-Specifically, we aim to explore 
-How does the bias of current article impact the next step in the path ?
+### Does the bias of current article impact the next step in the path ?
 {: .text-justify}
 
 To answer that we are going to make the following analysis: We'll select a random article from within a player's path and identify its political bias. Then, we will investigate if the next articles chosen by the player tends to align with the same political bias. The key aspect of this analysis is to determine if there's a pattern where players consistently navigate to articles with similar biases, or if the transition from one article to the next reflects a distribution that roughly matches the overall proportions of biases present in our dataset, as represented by the solid line on our graph.
 {: .text-justify}
 
-
 {% include bias_n_3b3.html %}
-
- We can clearly see a difference <mark> ** Do a statistical test ** </mark>.
 
 People tend to pick articles with a <span style="color: lightblue">right</span> bias or no bias more than expected, and less articles with a <span style="color: lightcoral">left</span> bias, no matter what article they come from. Do people tend to avoid articles with a <span style="color: lightcoral">left</span>-leaning bias ? 
 We cannot say for sure ; other parameters can come into play. For example, do articles link to different kind of articles depending on their bias ? 
