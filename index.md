@@ -130,7 +130,8 @@ The graph below displays the distribution of article biases chosen by players du
 As anticipated, the paths contain a higher proportion of <span style="color: deepskyblue">right</span>-biased  articles, reflecting the overall greater presence of <span style="color: deepskyblue">right</span>-leaning  content in the dataset.
 {: .text-justify}
 
-But is it sigificant ? The chi-squared test revealed a statistically significant difference in the distribution of political biases ('<span style="color: deepskyblue">right</span> ', 'center', '<span style="color: lightcoral">left</span>') between the overall articles and the one used in thepaths, with a chi-squared statistic of 185.81 and a p-value very close to 0 (4.49 * 10<sup>-41</sup>). Despite the seemingly modest changes in the percentage between the datasets, the very low p-value indicates that the observed distribution of biases in the paths is highly unlikely to have occurred by random chance, suggesting a genuine difference in the distribution of political biases between the overall articles and the articles in the paths. 
+But is it sigificant ?
+The chi-squared test showed a significant difference in political biases distribution ('<span style="color: deepskyblue">right</span> ', 'center', '<span style="color: lightcoral">left</span>') between all articles and those in the paths, with a statistic of 185.81 and a p-value near 0 (4.49 * 10^-41). Despite small percentage shifts, this low p-value implies a non-random bias distribution difference. The large sample size and consistent category distribution reinforce this statistical significance.
 The large sample size and consistent distribution across categories contribute to the high statistical significance of this difference. We will now focus on the link between a biased article and the next one.
 
 ### Does the bias of current article impact the next step in the path ?
