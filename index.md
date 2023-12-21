@@ -17,8 +17,8 @@ Our dataset is an extensive collection derived from the Wikispeedia game, featur
 {: .text-justify}
 
 ## What about political bias and political figures in wikispeedia ?
-Firstly, let’s define political bias : this refers to a tendency to orient or modify information to make a political position more attractive. To define that, plain text of the articles was assessed in relation to two other well-known sites that reproduce Wikipedia in a politically biased way: [Rationalwiki](https://rationalwiki.org/wiki/Main_Page) and [Infogalactic](https://infogalactic.com/info/Main_Page). According to [Media Bias/Fact check](https://mediabiasfactcheck.com/), these websites are respectively recognized as having a <span style="color: lightcoral">left-wing</span>
- and <span style="color: lightblue">right-wing</span>
+Firstly, let’s define political bias : this refers to a tendency to orient or modify information to make a political position more attractive. To define that, plain text of the articles was assessed in relation to two other well-known sites that reproduce Wikipedia in a politically biased way: [Rationalwiki](https://rationalwiki.org/wiki/Main_Page) and [Infogalactic](https://infogalactic.com/info/Main_Page). According to [Media Bias/Fact check](https://mediabiasfactcheck.com/), these websites are respectively recognized as having a <span style="color: lightcoral">left</span>-wing
+ and <span style="color: blue">right</span>-wing
  bias. After training a machine learning model (BERT with SVM) on data scraped from these websites, Wikispeedia articles are classified according the bias they contain. The results are shown below: 
  {: .text-justify}
 
@@ -53,8 +53,8 @@ To put this theory to the test, we specifically zoom in on political figures. Th
 
 {% include repart_bias_pol_2a3_2.html %}
 
-There is a trend of <span style="color: lightblue">right-leaning</span> bias across articles about political figures from various affiliations.
-We performed a linear regression analysis to investigate the potential correlation between political affiliations and perceived bias in Wikipedia articles. Although the findings were not conclusively indicative due to the limited size of the dataset, we identified one significant result: the 'affiliation_Center' variable showed a positive correlation with a <span style="color: lightblue">right-leaning</span> bias in Wikipedia articles (coefficient = 0.3135, p-value = 0.002). This suggests that individuals with a centrist political stance may be more likely to have Wikipedia articles that exhibit a <span style="color: lightblue">right</span> bias.
+There is a trend of <span style="color: lightblue">right</span>-leaning bias across articles about political figures from various affiliations.
+We performed a linear regression analysis to investigate the potential correlation between political affiliations and perceived bias in Wikipedia articles. Although the findings were not conclusively indicative due to the limited size of the dataset, we identified one significant result: the 'affiliation_Center' variable showed a positive correlation with a <span style="color: lightblue">right</span>-leaning bias in Wikipedia articles (coefficient = 0.3135, p-value = 0.002). This suggests that individuals with a centrist political stance may be more likely to have Wikipedia articles that exhibit a <span style="color: lightblue">right</span> bias.
 
 We now have a pretty good overview in the political biases in Wikispeedia articles. We now understand that there are some biases in the way articles are written and they might permeate in the content we consume daily. This raises a crucial question: How do these biases translate into interactive online environments, specifically in games like Wikispeedia? In the next section, we delve into the Wikispeedia Analysis to investigate whether the potential biases in Wikipedia articles affect the way players navigate through this game.
 {: .text-justify}
@@ -76,7 +76,7 @@ To ensure comparability, we normalized these metrics to a 0-1 range by dividing 
 {% include repart_bias_araigne_3a(2).html %}
 
 Well, this graph is interesting. There are significant differences in the way people navigate through Wikipedia depending on the bias of the article. 
-The graph clearly shows that paths with an average <span style="color: lightcoral">left-leaning</span> bias tend to be abandoned more frequently, suggesting that players often give up the game when encountering these articles. This might be attributed to difficulties in finding relevant information, leading to confusion. This theory is supported by the observation that the average time spent on <span style="color: lightcoral">left-biased</span> paths is longer compared to those with <span style="color: lightblue">right</span> bias or center biases. Additionally, paths featuring a higher proportion of <span style="color: lightblue">right-leaning</span>  articles are associated with more successful game outcomes, indicated by better ratings. However, it's important to consider that <span style="color: lightblue">right-bias</span> paths also exhibit a higher frequency of back-clicks, implying that users often do not find the information they initially sought.
+The graph clearly shows that paths with an average <span style="color: lightcoral">left</span>-leaning bias tend to be abandoned more frequently, suggesting that players often give up the game when encountering these articles. This might be attributed to difficulties in finding relevant information, leading to confusion. This theory is supported by the observation that the average time spent on <span style="color: lightcoral">left</span>-biased paths is longer compared to those with <span style="color: lightblue">right</span> bias or center biases. Additionally, paths featuring a higher proportion of <span style="color: lightblue">right</span>-leaning  articles are associated with more successful game outcomes, indicated by better ratings. However, it's important to consider that <span style="color: lightblue">right</span>-bias paths also exhibit a higher frequency of back-clicks, implying that users often do not find the information they initially sought.
 {: .text-justify}
 
 This analysis is valuable as it offers preliminary insights into how biases in Wikipedia articles might influence user navigation behavior, revealing preferences in information seeking.
@@ -92,7 +92,7 @@ Here are the articles the most choosen by the players :
 
 {% include top25_pages_finished_paths2.html %}
 
-Those articles are all very standard but something caught our attention in the graph.. Let's look take a look at the first and last article chosen by players but only for the political people category. Is there a tendency to choose more <span style="color: lightblue">right-wing </span> people or <span style="color: lightcoral">left-wing</span> people?
+Those articles are all very standard but something caught our attention in the graph.. Let's look take a look at the first and last article chosen by players but only for the political people category. Is there a tendency to choose more <span style="color: lightblue">right </span> -wing people or <span style="color: lightcoral">left</span>-wing people?
 {: .text-justify}
 
 {% include repart_pol_path_3b1(2).html %}
@@ -127,7 +127,7 @@ The graph below displays the distribution of article biases chosen by players du
 {% include political_bias_repartition_in_the_paths.html %}
 
 
-As anticipated, the paths contain a higher proportion of <span style="color: lightblue">right-biased</span>  articles, reflecting the overall greater presence of <span style="color: lightblue">right-leaning</span>  content in the dataset.
+As anticipated, the paths contain a higher proportion of <span style="color: lightblue">right</span>-biased  articles, reflecting the overall greater presence of <span style="color: lightblue">right</span>-leaning  content in the dataset.
 {: .text-justify}
 
 But is it sigificant ? The chi-squared test revealed a statistically significant difference in the distribution of political biases ('<span style="color: lightblue">right</span> ', 'center', 'left') between the two datasets, with a chi-squared statistic of 185.81 and a p-value very close to 0 (4.49 * 10<sup>-41</sup>). Despite the seemingly modest changes in the percentage between the datasets, the very low p-value indicates that the observed distribution of biases in the paths is highly unlikely to have occurred by random chance, suggesting a genuine difference in the distribution of political biases between the overall articles and the articles in the paths. 
