@@ -16,6 +16,10 @@ Wikispeedia is a game where players are tasked with navigating from one Wikipedi
 Our dataset is an extensive collection derived from the Wikispeedia game, featuring detailed records on how players moved from one Wikipedia article to another, a process we'll refer to as 'the path' in our subsequent analysis. This dataset encompasses 4,604 Wikipedia articles as they existed in 2007, meticulously documenting user navigation and thereby shedding light on patterns in the pursuit of information. It also captures the duration users spend on these paths, providing a window into their engagement levels and the complexity of the topics encountered. Furthermore, the dataset includes categorizations for each article, facilitating focused studies across a variety of knowledge areas. This rich, layered dataset serves as the foundation for our investigation into potential political biases in Wikipedia's content.
 {: .text-justify}
 
+<p align="center">
+<img src="assets/img/giphy.gif" alt=""/>
+</p>
+
 ## What about political bias and political figures in wikispeedia ?
 Firstly, let’s define political bias : this refers to a tendency to orient or modify information to make a political position more attractive. To define that, plain text of the articles was assessed in relation to two other well-known sites that reproduce Wikipedia in a politically biased way: [Rationalwiki](https://rationalwiki.org/wiki/Main_Page) and [Infogalactic](https://infogalactic.com/info/Main_Page). According to [Media Bias/Fact check](https://mediabiasfactcheck.com/), these websites are respectively recognized as having a <span style="color: lightcoral">left</span>-wing
  and <span style="color: deepskyblue">right</span>-wing
