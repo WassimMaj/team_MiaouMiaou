@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blue Click, Red Click 🖱️
+title: Blue Click, Red Click
 subtitle: Decoding the matrix behind the political bias of Wikispeedia
 cover-img: /assets/img/background.png
 ---
@@ -63,7 +63,7 @@ We now have a pretty good overview in the political biases in Wikispeedia articl
 
 ### How does the bias affect players during their games ?
 
-In order to answer this quesiton we found interesting to analyse some key metrics about the paths : 
+In order to measure how bias affect player during the game we first calculated the average bias of each path and analysed the following key metrics : 
 - The percentage of back-clicks
 - the mean rating
 - the finished percentage 
@@ -71,12 +71,9 @@ In order to answer this quesiton we found interesting to analyse some key metric
 
 We correlate these metrics with the political bias of articles on the plot below :
 
-<mark>Via Faut que tu marques 3-4 lignes sur comment ta fait ces analyses depuis les paths, j'ai pas capté comment tu prends les meantime par exemple vu que dans les paths t'as du droite et du gauche en meme temps <mark>
+To ensure comparability, we normalized these metrics to a 0-1 range by dividing each value by its respective maximum, allowing for an equal weighting across the diverse scales of data. With this plot we can visualize the biases of each path relative to one another but cannot visualize absolute performance, since the graph does not display the maximum possible value of a feature.
 
-{% include repart_bias_araigne_3a.html %}
-
-<mark>(about that, pourquoi on normalise aussi les percentage backlicks et finished/unfinished si c’est des % de base, donc de 0 à 1 ?) </mark>
-<mark>Les valeurs sur le graphs quand o passe la souris devraient etre les moyennes <mark>
+{% include repart_bias_araigne_3a(2).html %}
 
 Well, this graph is interesting. There are significant differences in the way people navigate through wikipedia depending on the bias of the article. 
 The graph clearly shows that paths originating from articles with a left-leaning bias tend to be abandoned more frequently, suggesting that players often give up the game when encountering these articles. This might be attributed to difficulties in finding relevant information, leading to confusion. This theory is supported by the observation that the average time spent on left-biased articles is longer compared to those with right or center biases. Additionally, paths featuring a higher proportion of right-leaning articles are associated with more successful game outcomes, indicated by better ratings. However, it's important to consider that right-biased articles also exhibit a higher frequency of back-clicks, implying that users often do not find the information they initially sought.
@@ -98,10 +95,9 @@ Here are the articles the most choosed by the players :
 Those articles are all very stantard but something caught our attention in the graph.. Let's look take a look at the first and last article chosen by players but only for the political people category. Is there a tendency to choose more right-wing people or left-wing people?
 {: .text-justify}
 
-{% include repart_pol_path_3b1.html %}
+{% include repart_pol_path_3b1(2).html %}
 
-Well, that is a little bit akward.
-
+Well... We didn't expect that.
 <p align="center">
 <img src="assets/img/dolf.gif" alt=""/>
 </p>
@@ -138,6 +134,9 @@ People tend to pick articles with a <span style="color: lightblue">right</span> 
 We cannot say for sure ; other parameters can come into play. For example, do articles link to different kind of articles depending on their bias ? 
 {: .text-justify}
 
+{% include boxplot_left.html %}
+{% include boxplot_right.html %}
+{% include boxplot_center.html %}
 
 ### Conclusion
 
