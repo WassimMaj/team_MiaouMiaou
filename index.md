@@ -33,7 +33,7 @@ A good way to understand this bias is to look the repartition through each categ
 
 
 <p align="left">
-{% include repart_bias_categ_2a2.html %}
+{% include repart_bias_categ_2a2(2).html %}
 </p>
 
 
@@ -115,9 +115,20 @@ For a Wikispeedia player, it can be fun to make the link between a random topic 
 It's important to note that interest in such a figure does not necessarily equate to support or admiration.
 {: .text-justify}
 
+Having gained insights into the initial and final articles chosen by players in Wikispeedia, we now shift our focus to the in-game decisions made during the course of play. 
+{: .text-justify}
 
+The graph below displays the distribution of article biases chosen by players during their navigation paths:
+{: .text-justify}
 
-Having gained insights into the initial and final articles chosen by players in Wikispeedia, we now shift our focus to the in-game decisions made during the course of play. Specifically, we aim to explore 
+{% political_bias_repartition_in_the_paths.html %}
+
+As anticipated, the paths contain a higher proportion of right-biased articles, reflecting the overall greater presence of right-leaning content in the dataset.
+{: .text-justify}
+
+<mark> ** Do a statistical test ** </mark>.
+
+Specifically, we aim to explore 
 How does the bias of current article impact the next step in the path ?
 {: .text-justify}
 
@@ -126,7 +137,6 @@ To answer that we are going to make the following analysis: We'll select a rando
 
 
 {% include bias_n_3b3.html %}
-
 
  We can clearly see a difference <mark> ** Do a statistical test ** </mark>.
 
