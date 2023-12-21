@@ -125,7 +125,7 @@ Having gained insights into the initial and final articles chosen by players in 
 The graph below displays the distribution of article biases chosen by players during their navigation paths:
 {: .text-justify}
 
-{% political_bias_repartition_in_the_paths.html %}
+
 
 
 As anticipated, the paths contain a higher proportion of right-biased articles, reflecting the overall greater presence of right-leaning content in the dataset.
