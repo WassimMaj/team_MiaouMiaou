@@ -155,7 +155,8 @@ We cannot say for sure ; other parameters can come into play. We assumed the exp
 {% include boxplot_right.html %}
 {% include coeff_logistic_regression.html %}
 
-
+After taking a look at the repartition of the links, and doing a few Chi-square tests, we realized that the we cannot associate the difference of repartition bias in links and in article distribution to randomness. On the other hand, the repartition of bias in links and in paths are similar. Thinking about it, if players chose an article randomly from the page they're on, they would pick randomly between the links available. If more links lead to right-biased articles, they will appear more in the overall paths.   
+Simply said, this means that if there is a prevalent proportion of articles with a right bias in the paths, it's not because players tend to choose them more willingly, but just because the amount leading to right biased articles is bigger.
 
 ### Conclusion
 
@@ -177,6 +178,6 @@ Acknowledging the exploratory nature of our study, it's evident that further res
 
 [3] West, R., Pineau, J., & Precup, D. (2009, June). Wikispeedia: An online game for inferring semantic distances between concepts. In Twenty-First International Joint Conference on Artificial Intelligence.  
   
-Cover Image : OpenAI. "DALL·E - Image Generation with Text as Input." https://openai.com/dall-e. OpenAI, 2023
+Cover Image : OpenAI. "DALL·E - Image Generation with Text as Input." [DALL·E]{https://openai.com/dall-e}. OpenAI, 2023
 
 [<sup>[top]</sup>](#top)
