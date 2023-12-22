@@ -161,10 +161,10 @@ Simply said, this means that if there is a prevalent proportion of articles with
 
 ### Conclusion
 
-Our exploration into the realm of political biases in Wikipedia and their potential influence on Wikispeedia players has led us to some intriguing observations. There seems to be a pattern where players' choices within the game are influenced by the political tone of the articles. This trend is suggested by the tendency of players to choose certain types of articles more frequently, and how their subsequent selections might align with specific political leanings. 
+Our exploration into the realm of political biases in Wikipedia and their potential influence on Wikispeedia players has led us to some intriguing observations. There seems to be a pattern where players' choices within the game are influenced by the political tone of the articles. The political bias in a player's path impacts some of the games statistics such as success rate for example. On the other hand, we cannot say that players tend to choose a certain bias more than expected, as the distribution of their choices correspond to the links available to them. It makes sense, as they cannot know the content of the article, or the political bias within before clicking on the link.
 {: .text-justify}
 
-However, it's crucial to remember that these are initial observations and not absolute conclusions. Our determinations of the political affiliations of articles are based on a model we created, which, while useful, does not offer 100% accuracy.
+However, it's crucial to remember that these are initial observations and not absolute conclusions. Our determinations of the political affiliations of articles are based on a model we created, which, while useful and pretty accurate, is based using texts taken from websites with known politcal stances. This process assumes that articles resembling the content of these websites share the same bias, which may not capture bias accurately. Detecting or characterizing bias in a text is a difficult task, even for humans.
 {: .text-justify}
 
 Acknowledging the exploratory nature of our study, it's evident that further research is necessary. A broader dataset would be invaluable in deepening our understanding of the nuances in player behavior and the motivations behind their choices. Future investigations could aim to more accurately determine how these observed biases in navigation might reflect larger patterns in how people interact with information online, particularly in politically sensitive contexts.
