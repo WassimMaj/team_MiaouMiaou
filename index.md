@@ -44,7 +44,7 @@ A good way to understand this bias is to look the repartition through each categ
 Even though most categories have a clear majority of articles with a <span style="color: deepskyblue">right</span> bias, in a few categories, such as chemistry or railway transport, they account for less than 50%. 
 {: .text-justify}
 
-**It seems that article categories can have a link with the political bias in the way they are written. It can be for many reasons but our hypothesis is that it come from the article' authors. Let's think about it. Wikipedia is collaborative website where anyone can write or complete articles. Who takes personal time to write an article on Wikipedia ? It has to be people passionated or at least very interested in the subject. In that case, a chemist or someone really interested in chemistry is more likely to write an article in the correponding category.**
+It seems that article categories can have a link with the political bias in the way they are written. It can be for many reasons one of which could be that it comes from the articles' authors. Let's think about it. Wikipedia is collaborative website where anyone can write or complete articles. Who takes personal time to write an article on Wikipedia ? It has to be people passionated or at least very interested in the subject. In that case, a chemist or someone really interested in chemistry is more likely to write an article in the correponding category.
 {: .text-justify}
 
 This concept becomes particularly pertinent when we turn to politically charged topics like political parties, figures, or events. Here, the contributors could be those who hold strong opinions or affiliations, potentially coloring the articles with their biases.
@@ -113,7 +113,7 @@ After performing a t-test on the political figures we can confirm that it is sta
 {: .text-justify}
 
 
-This strongly suggests that the choice of Adolf Hitler as a starting or ending point in the game is not merely a coincidence or a random occurrence. It looks like there is a specific interest or focus on this particular historical figure within the Wikispeedia gaming community. But why Adolf Hitler and not Napoleon or Jules Cesar ? With our team we thought that it can be due to **media and the Pop Culture. Hitler and the Nazi regime have been extensively depicted in movies, documentaries, books, and on internet, keeping his memory alive in the public consciousness.** Also Hitler is synonymous with extreme ideologies, genocide, and war. Controversial figures often attract more attention, as people seek to understand the motivations and circumstances behind their actions.
+This strongly suggests that the choice of Adolf Hitler as a starting or ending point in the game is not merely a coincidence or a random occurrence. It looks like there is a specific interest or focus on this particular historical figure within the Wikispeedia gaming community. But why Adolf Hitler and not Napoleon or Jules Cesar ? Well we cannot answer that for sure, but Hitler and the Nazi regime have been extensively depicted in movies, documentaries, books, and on internet, since a long time, keeping his memory alive in the public consciousness. Also Hitler is synonymous with extreme ideologies, genocide, and war. Controversial figures often attract more attention, as people seek to understand the motivations and circumstances behind their actions.
 {: .text-justify}
 
 For a Wikispeedia player, it can be fun to make the link between a random topic and Adolf Hitler, which represents a challenge in connecting seemingly unrelated extreme subjects.
@@ -141,13 +141,14 @@ The large sample size and consistent distribution across categories contribute t
 ### Does the bias of current article impact the next step in the path ?
 {: .text-justify}
 
-To answer that we are going to make the following analysis: **We'll select a random article from within a player's path and identify** its political bias. Then, we will investigate if the next articles chosen by the player tends to align with the same political bias. The key aspect of this analysis is to determine if there's a pattern where players consistently navigate to articles with similar biases, or if the transition from one article to the next reflects a distribution that roughly matches the overall proportions of biases present in our dataset, as represented by the solid line on our graph.
+To answer that we are going to make the following analysis: We will take a look at all the articles in the paths available and identify their political bias. Then, we will investigate if the next articles chosen by the player tends to align with the same political bias. The key aspect of this analysis is to determine if there's a pattern where players consistently navigate to articles with similar biases, or if the transition from one article to the next reflects a distribution that roughly matches the overall proportions of biases present in our dataset, as represented by the solid line on our graph.
 {: .text-justify}
 
 {% include bias_n_3b3.html %}
 
 People tend to pick articles with a <span style="color: deepskyblue">right</span> bias or no bias more than expected, and less articles with a <span style="color: lightcoral">left</span> bias, no matter what article they come from. Do people tend to avoid articles with a <span style="color: lightcoral">left-leaning</span> bias ? 
-We cannot say for sure ; other parameters can come into play. For example, do articles link to different kind of articles depending on their bias ? 
+We cannot say for sure ; other parameters can come into play. We assumed the expected frequencies to be the overall distribution of bias in all the articles. But is the distribution of links similar to the overall frequency ?
+
 {: .text-justify}
 
 {% include boxplot_left.html %}
@@ -155,7 +156,7 @@ We cannot say for sure ; other parameters can come into play. For example, do ar
 {% include boxplot_right.html %}
 {% include coeff_logistic_regression.html %}
 
-**Write analysis**
+
 
 ### Conclusion
 
@@ -175,7 +176,8 @@ Acknowledging the exploratory nature of our study, it's evident that further res
 
 [2] Hube, C. (2017, April). Bias in wikipedia. In Proceedings of the 26th International Conference on World Wide Web Companion (pp. 717-721).
 
-[3] West, R., Pineau, J., & Precup, D. (2009, June). Wikispeedia: An online game for inferring semantic distances between concepts. In Twenty-First International Joint Conference on Artificial Intelligence.
-
+[3] West, R., Pineau, J., & Precup, D. (2009, June). Wikispeedia: An online game for inferring semantic distances between concepts. In Twenty-First International Joint Conference on Artificial Intelligence.  
+  
+Cover Image : OpenAI. "DALL·E - Image Generation with Text as Input." https://openai.com/dall-e. OpenAI, 2023
 
 [<sup>[top]</sup>](#top)
