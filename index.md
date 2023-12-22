@@ -179,6 +179,6 @@ Acknowledging the exploratory nature of our study, it's evident that further res
 
 [3] West, R., Pineau, J., & Precup, D. (2009, June). Wikispeedia: An online game for inferring semantic distances between concepts. In Twenty-First International Joint Conference on Artificial Intelligence.  
   
-Cover Image : OpenAI. "DALL·E - Image Generation with Text as Input." [DALL·E]{https://openai.com/dall-e}. OpenAI, 2023
+Cover Image : OpenAI. "DALL·E - Image Generation with Text as Input." [DALL·E](https://openai.com/dall-e). OpenAI, 2023
 
 [<sup>[top]</sup>](#top)
