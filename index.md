@@ -135,7 +135,7 @@ As anticipated, the paths contain a higher proportion of <span style="color: dee
 {: .text-justify}
 
 But is it really the proportions we expected ?
-The chi-squared test showed a significant difference in political biases distribution ('<span style="color: deepskyblue">right</span> ', 'center', '<span style="color: lightcoral">left</span>') between all articles and those in the paths, with a p-value near 0 (4.49 • 10<sup>-42</sup>). Despite small percentage shifts, this low p-value implies a non-random bias distribution difference. The large sample size and consistent category distribution reinforce this statistical significance.
+The chi-squared test showed a significant difference in political biases distribution ('<span style="color: deepskyblue">right</span> ', 'center', '<span style="color: lightcoral">left</span>') between all articles and those in the paths, with a p-value near 0 (4.49 • 10<sup>-42</sup>). Despite small percentage shifts, this low p-value implies a non-random bias distribution difference.
 The large sample size and consistent distribution across categories contribute to the high statistical significance of this difference. We will now focus on the link between a biased article and the next one.
 
 ### Does the bias of current article impact the next step in the path ?
