@@ -6,10 +6,10 @@ cover-img: /assets/img/background.png
 ---
 ## Introduction {#top}
 
-Today, Wikipedia is part of everybody’s life. It is the first source that most people will check when they want to get information. This website is maintained by volunteers through open collaboration, and what makes its strength, can also bring problems. Wikipedia aims to have a neutral point of view and stay strictly factual but can we guarantee this when anyone can become a contributor? A study [<sup>[1]</sup>](#ref) observed that a large number of Wikipedia editors change their behavior and focus on editing controversial topics when promoted to administrators, they might be biased (consciously or not) and influence these articles. This concern about bias in Wikipedia content leads us to consider how such biases might extend to user interactions with the platform, such as through the Wikispeedia game.  
+Today, Wikipedia is part of everybody’s life. It is the first source that most people will check when they want to get information. This website is maintained by volunteers through open collaboration, and what makes its strength, can also bring problems. Wikipedia aims to have a neutral point of view and stay strictly factual but can we guarantee this when anyone can become a contributor? A study [<sup>[1]</sup>](#ref) observed that a large number of Wikipedia editors change their behavior and focus on editing controversial topics when promoted to administrators, they might be biased (consciously or not) and influence these articles. This concern about bias in Wikipedia content leads us to consider how such biases might extend to user interactions with the platform, in the Wikispeedia game.  
 {: .text-justify}
 
-Wikispeedia is a game where players are tasked with navigating from one Wikipedia article to another using only internal Wikipedia links. The objective of this game is entertainment, but also allowed to gather data on how humans perceive the semantic distance between different concepts. The paths that players take from the start article to the end article, along with the number of clicks and the time taken, offer valuable insights into the way people relate and categorize information.[<sup>[3]</sup>](#ref). We will use this insight to understand the effect of potential political bias. Our study aims to examine the political bias within Wikipedia and its potential impact on Wikispeedia players.
+Wikispeedia is a game where players are tasked with navigating from one Wikipedia article to another using only internal Wikipedia links. The objective of this game is entertainment, but also allowed to gather data on how humans perceive the semantic distance between different concepts. The paths that players take from the start article to the end article, along with the number of clicks and the time taken, offer valuable insights into the way people relate and categorize information[<sup>[3]</sup>](#ref). We will use this insight to understand the effect of potential political bias. Our study aims to examine the political bias within Wikipedia and its potential impact on Wikispeedia players.
 {: .text-justify}
 
 
@@ -23,7 +23,7 @@ Our dataset is an extensive collection derived from the Wikispeedia game, featur
 ## What about political bias and political figures in wikispeedia ?
 Firstly, let’s define political bias : this refers to a tendency to orient or modify information to make a political position more attractive. To define that, plain text of the articles was assessed in relation to two other well-known sites that reproduce Wikipedia in a politically biased way: [Rationalwiki](https://rationalwiki.org/wiki/Main_Page) and [Infogalactic](https://infogalactic.com/info/Main_Page). According to [Media Bias/Fact check](https://mediabiasfactcheck.com/), these websites are respectively recognized as having a <span style="color: lightcoral">left</span>-wing
  and <span style="color: deepskyblue">right</span>-wing
- bias. After training a machine learning model (BERT with SVM) on data scraped from these websites, Wikispeedia articles are classified according the bias they contain. The results are shown below: 
+ bias. After training a natural language processing model (BERT embeddings with SVM for classification) on data scraped from these websites, Wikispeedia articles are classified according the bias they contain. The results are shown below: 
  {: .text-justify}
 
 {% include repart_bias_2a1.html %}
@@ -44,7 +44,7 @@ A good way to understand this bias is to look the repartition through each categ
 Even though most categories have a clear majority of articles with a <span style="color: deepskyblue">right</span> bias, in a few categories, such as chemistry or railway transport, they account for less than 50%. 
 {: .text-justify}
 
-It seems that article categories can have a link with the political bias in the way they are written. It can be for many reasons but our hypothesis is that it come from the article' authors. Let's think about it. Wikipedia is collaborative website where anyone can write or complete articles. Who takes personal time to write an article on Wikipedia ? It has to be people passionated or at least very interested in the subject. In that case, a chemist or someone really interested in chemistry is more likely to write an article in the correponding category.
+**It seems that article categories can have a link with the political bias in the way they are written. It can be for many reasons but our hypothesis is that it come from the article' authors. Let's think about it. Wikipedia is collaborative website where anyone can write or complete articles. Who takes personal time to write an article on Wikipedia ? It has to be people passionated or at least very interested in the subject. In that case, a chemist or someone really interested in chemistry is more likely to write an article in the correponding category.**
 {: .text-justify}
 
 This concept becomes particularly pertinent when we turn to politically charged topics like political parties, figures, or events. Here, the contributors could be those who hold strong opinions or affiliations, potentially coloring the articles with their biases.
@@ -109,11 +109,11 @@ Well... We didn't expect that.
 The data reveals a striking trend: Adolf Hitler is chosen as a starting or ending point in the Wikispeedia game far more frequently than any other political figure. It's important to note that this graph uses a logarithmic scale, which underscores the significant disparity in these choices. This raises a question: does this pattern indicate a substantial interest in Adolf Hitler among Wikispeedia players, or could it simply be a coincidental outcome?
 {: .text-justify}
 
-After performing a t-test on the political figures we can confirm that it is statistically significant as our p-value is close to 0 (1 x 10<sup>-62</sup>). 
+After performing a t-test on the political figures we can confirm that it is statistically significant as our p-value is close to 0 (10<sup>-62</sup>). 
 {: .text-justify}
 
 
-This strongly suggests that the choice of Adolf Hitler as a starting or ending point in the game is not merely a coincidence or a random occurrence. It looks like there is a specific interest or focus on this particular historical figure within the Wikispeedia gaming community. But why Adolf Hitler and not Napoleon or Jules Cesar ? With our team we thought that it can be due to media and the Pop Culture. Hitler and the Nazi regime have been extensively depicted in movies, documentaries, books, and on internet, keeping his memory alive in the public consciousness. Also Hitler is synonymous with extreme ideologies, genocide, and war. Controversial figures often attract more attention, as people seek to understand the motivations and circumstances behind their actions.
+This strongly suggests that the choice of Adolf Hitler as a starting or ending point in the game is not merely a coincidence or a random occurrence. It looks like there is a specific interest or focus on this particular historical figure within the Wikispeedia gaming community. But why Adolf Hitler and not Napoleon or Jules Cesar ? With our team we thought that it can be due to **media and the Pop Culture. Hitler and the Nazi regime have been extensively depicted in movies, documentaries, books, and on internet, keeping his memory alive in the public consciousness.** Also Hitler is synonymous with extreme ideologies, genocide, and war. Controversial figures often attract more attention, as people seek to understand the motivations and circumstances behind their actions.
 {: .text-justify}
 
 For a Wikispeedia player, it can be fun to make the link between a random topic and Adolf Hitler, which represents a challenge in connecting seemingly unrelated extreme subjects.
@@ -135,13 +135,13 @@ As anticipated, the paths contain a higher proportion of <span style="color: dee
 {: .text-justify}
 
 But is it sigificant ?
-The chi-squared test showed a significant difference in political biases distribution ('<span style="color: deepskyblue">right</span> ', 'center', '<span style="color: lightcoral">left</span>') between all articles and those in the paths, with a statistic of 185.81 and a p-value near 0 (4.49 * 10^-41). Despite small percentage shifts, this low p-value implies a non-random bias distribution difference. The large sample size and consistent category distribution reinforce this statistical significance.
+The chi-squared test showed a significant difference in political biases distribution ('<span style="color: deepskyblue">right</span> ', 'center', '<span style="color: lightcoral">left</span>') between all articles and those in the paths, with a statistic of 185.81 and a p-value near 0 (4.49 • 10<sup>-42</sup>). Despite small percentage shifts, this low p-value implies a non-random bias distribution difference. The large sample size and consistent category distribution reinforce this statistical significance.
 The large sample size and consistent distribution across categories contribute to the high statistical significance of this difference. We will now focus on the link between a biased article and the next one.
 
 ### Does the bias of current article impact the next step in the path ?
 {: .text-justify}
 
-To answer that we are going to make the following analysis: We'll select a random article from within a player's path and identify its political bias. Then, we will investigate if the next articles chosen by the player tends to align with the same political bias. The key aspect of this analysis is to determine if there's a pattern where players consistently navigate to articles with similar biases, or if the transition from one article to the next reflects a distribution that roughly matches the overall proportions of biases present in our dataset, as represented by the solid line on our graph.
+To answer that we are going to make the following analysis: **We'll select a random article from within a player's path and identify** its political bias. Then, we will investigate if the next articles chosen by the player tends to align with the same political bias. The key aspect of this analysis is to determine if there's a pattern where players consistently navigate to articles with similar biases, or if the transition from one article to the next reflects a distribution that roughly matches the overall proportions of biases present in our dataset, as represented by the solid line on our graph.
 {: .text-justify}
 
 {% include bias_n_3b3.html %}
@@ -154,6 +154,8 @@ We cannot say for sure ; other parameters can come into play. For example, do ar
 {% include boxplot_center.html %}
 {% include boxplot_right.html %}
 {% include coeff_logistic_regression.html %}
+
+**Write analysis**
 
 ### Conclusion
 
