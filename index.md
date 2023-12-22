@@ -23,7 +23,7 @@ Our dataset is an extensive collection derived from the Wikispeedia game, featur
 ## What about political bias and political figures in wikispeedia ?
 Firstly, let’s define political bias : this refers to a tendency to orient or modify information to make a political position more attractive. To define that, plain text of the articles was assessed in relation to two other well-known sites that reproduce Wikipedia in a politically biased way: [Rationalwiki](https://rationalwiki.org/wiki/Main_Page) and [Infogalactic](https://infogalactic.com/info/Main_Page). According to [Media Bias/Fact check](https://mediabiasfactcheck.com/), these websites are respectively recognized as having a <span style="color: lightcoral">left</span>-wing
  and <span style="color: deepskyblue">right</span>-wing
- bias. After training a natural language processing model (BERT embeddings with SVM for classification) on data scraped from these websites, Wikispeedia articles are classified according the bias they contain. The results are shown below: 
+ bias. After training a natural language processing model (BERT embeddings with SVM for classification) on data scraped from these websites, Wikispeedia articles are classified according to the similarity with the collected text. If it's closer to one compared the other, we assume a political bias in the article. The results are shown below: 
  {: .text-justify}
 
 {% include repart_bias_2a1.html %}
@@ -31,14 +31,13 @@ Firstly, let’s define political bias : this refers to a tendency to orient or 
 We can see that most of articles in Wikispeedia are similar to Infogalactic and therefore classified as <span style="color: deepskyblue">right</span> wing.
 {: .text-justify}
 
-But does this mean that articles in Wikispeedia are biased ? It is too early to say that, we need to go deeper inside our data.
-A good way to understand this bias is to look the repartition through each categories of articles to see if there is a notable difference.
+Let's characterize this repartition a bit more precisely and dive deeper in the data. A good way to understand this bias is to look the repartition through each categories of articles to see if there is a notable difference.
 {: .text-justify}
 
 
-<p align="left">
+
 {% include repart_bias_categ_2a2(2).html %}
-</p>
+
 
 
 Even though most categories have a clear majority of articles with a <span style="color: deepskyblue">right</span> bias, in a few categories, such as chemistry or railway transport, they account for less than 50%. 
