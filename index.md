@@ -156,7 +156,8 @@ We cannot say for sure ; other parameters can come into play. We assumed the exp
 {% include boxplot_right.html %}
 {% include coeff_logistic_regression.html %}
 
-
+After taking a look at the repartition of the links, and doing a few Chi-square tests, we realized that the we cannot associate the difference of repartition bias in links and in article distribution to randomness. On the other hand, the repartition of bias in links and in paths are similar. Thinking about it, if players chose an article randomly from the page they're on, they would pick randomly between the links available. If more links lead to right-biased articles, they will appear more in the overall paths.   
+Simply said, this means that if there is a prevalent proportion of articles with a right bias in the paths, it's not because players tend to choose them more willingly, but just because the amount leading to right biased articles is bigger.
 
 ### Conclusion
 
