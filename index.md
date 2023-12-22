@@ -20,7 +20,7 @@ Our dataset is an extensive collection derived from the Wikispeedia game, featur
 <img src="assets/img/giphy.gif" alt=""/>
 </p>
 
-## What about political bias and political figures in wikispeedia ?
+## What about political bias and political figures in Wikispeedia ?
 Firstly, let’s define political bias : this refers to a tendency to orient or modify information to make a political position more attractive. To define that, plain text of the articles was assessed in relation to two other well-known sites that reproduce Wikipedia in a politically biased way: [Rationalwiki](https://rationalwiki.org/wiki/Main_Page) and [Infogalactic](https://infogalactic.com/info/Main_Page). According to [Media Bias/Fact check](https://mediabiasfactcheck.com/), these websites are respectively recognized as having a <span style="color: lightcoral">left</span>-wing
  and <span style="color: deepskyblue">right</span>-wing
  bias. After training a natural language processing model (BERT embeddings with SVM for classification) on data scraped from these websites, Wikispeedia articles are classified according to the similarity with the collected text. If it's closer to one compared the other, we assume a political bias in the article. The results are shown below: 
@@ -43,7 +43,7 @@ Let's characterize this repartition a bit more precisely and dive deeper in the 
 Even though most categories have a clear majority of articles with a <span style="color: deepskyblue">right</span> bias, in a few categories, such as chemistry or railway transport, they account for less than 50%. 
 {: .text-justify}
 
-It seems that article categories can have a link with the political bias in the way they are written. It can be for many reasons one of which could be that it comes from the articles' authors. Let's think about it. Wikipedia is collaborative website where anyone can write or complete articles. Who takes personal time to write an article on Wikipedia ? It has to be people passionated or at least very interested in the subject. In that case, a chemist or someone really interested in chemistry is more likely to write an article in the correponding category.
+It seems that article categories can have a link with the political bias in the way they are written. It can be for many reasons one of which could be that it comes from the articles' authors. Let's think about it. Wikipedia is collaborative website where anyone can write or complete articles. Who takes personal time to write an article on Wikipedia ? It has to be people passionated or at least interested in the subject. In that case, a chemist or someone really interested in chemistry is more likely to write an article in the correponding category.
 {: .text-justify}
 
 This concept becomes particularly pertinent when we turn to politically charged topics like political parties, figures, or events. Here, the contributors could be those who hold strong opinions or affiliations, potentially coloring the articles with their biases.
@@ -57,7 +57,7 @@ To put this theory to the test, we specifically zoom in on political figures. Th
 {% include repart_bias_pol_2a3_2.html %}
 
 There is a trend of <span style="color: deepskyblue">right</span>-leaning bias across articles about political figures from various affiliations.
-We performed a linear regression analysis to investigate the potential correlation between political affiliations and perceived bias in Wikipedia articles. Although the findings were not conclusively indicative due to the limited size of the dataset, we identified one significant result: the 'affiliation_Center' variable showed a positive correlation with a <span style="color: deepskyblue">right</span>-leaning bias in Wikipedia articles (coefficient = 0.3135, p-value = 0.002). This suggests that individuals with a centrist political stance may be more likely to have Wikipedia articles that exhibit a <span style="color: deepskyblue">right</span> bias.
+We performed a linear regression analysis to investigate the potential correlation between political affiliations and perceived bias in Wikipedia articles. Although the findings were not conclusively indicative due to the limited size of the dataset, we identified one significant result: the 'affiliation_Center' variable showed a positive correlation with a <span style="color: deepskyblue">right</span>-leaning bias in Wikipedia articles (coefficient = 0.3135, p-value = 0.002). This suggests that individuals with a centrist or no political stance may be more likely to have Wikipedia articles that exhibit a <span style="color: deepskyblue">right</span> bias.
 
 We now have a pretty good overview in the political biases in Wikispeedia articles. We now understand that there are some biases in the way articles are written and they might permeate in the content we consume daily. This raises a crucial question: How do these biases translate into interactive online environments, specifically in games like Wikispeedia? In the next section, we delve into the Wikispeedia Analysis to investigate whether the potential biases in Wikipedia articles affect the way players navigate through this game.
 {: .text-justify}
@@ -74,7 +74,7 @@ In order to measure how bias affect player during the game we first calculated t
 
 We correlate these metrics with the political bias of articles on the plot below :
 
-To ensure comparability, we normalized these metrics to a 0-1 range by dividing each value by its respective maximum, allowing for an equal weighting across the diverse scales of data. With this plot we can visualize the biases of each path relative to one another but cannot visualize absolute performance, since the graph does not display the maximum possible value of a feature.
+To facilitate comparability, we normalized these metrics to a 0-1 range by dividing each value by its respective maximum, allowing for an equal weighting across the diverse scales of data. With this plot we can visualize the biases of each path relative to one another but cannot visualize absolute performance, since the graph does not display the maximum possible value of a feature.
 
 {% include repart_bias_araigne_3a(2).html %}
 
@@ -105,7 +105,8 @@ Well... We didn't expect that.
 <img src="assets/img/dolf.gif" alt=""/>
 </p>
 
-The data reveals a striking trend: Adolf Hitler is chosen as a starting or ending point in the Wikispeedia game far more frequently than any other political figure. It's important to note that this graph uses a logarithmic scale, which underscores the significant disparity in these choices. This raises a question: does this pattern indicate a substantial interest in Adolf Hitler among Wikispeedia players, or could it simply be a coincidental outcome?
+
+The data reveals a striking trend: Adolf Hitler appears as a starting or ending point in the Wikispeedia game far more frequently than any other political figure. It's important to note that this graph uses a logarithmic scale, which underscores the significant disparity in these choices. Assuming that the game proposes all the articles at the same rate, this means that people tend to choose him far more often than any other politcal figure for a staring or ending point. This raises a question: does this pattern indicate a substantial interest in Adolf Hitler among Wikispeedia players, or could it simply be a coincidental outcome?
 {: .text-justify}
 
 After performing a t-test on the political figures we can confirm that it is statistically significant as our p-value is close to 0 (10<sup>-62</sup>). 
@@ -133,8 +134,8 @@ The graph below displays the distribution of article biases chosen by players du
 As anticipated, the paths contain a higher proportion of <span style="color: deepskyblue">right</span>-biased  articles, reflecting the overall greater presence of <span style="color: deepskyblue">right</span>-leaning  content in the dataset.
 {: .text-justify}
 
-But is it sigificant ?
-The chi-squared test showed a significant difference in political biases distribution ('<span style="color: deepskyblue">right</span> ', 'center', '<span style="color: lightcoral">left</span>') between all articles and those in the paths, with a statistic of 185.81 and a p-value near 0 (4.49 • 10<sup>-42</sup>). Despite small percentage shifts, this low p-value implies a non-random bias distribution difference. The large sample size and consistent category distribution reinforce this statistical significance.
+But is it really the proportions we expected ?
+The chi-squared test showed a significant difference in political biases distribution ('<span style="color: deepskyblue">right</span> ', 'center', '<span style="color: lightcoral">left</span>') between all articles and those in the paths, with a p-value near 0 (4.49 • 10<sup>-42</sup>). Despite small percentage shifts, this low p-value implies a non-random bias distribution difference. The large sample size and consistent category distribution reinforce this statistical significance.
 The large sample size and consistent distribution across categories contribute to the high statistical significance of this difference. We will now focus on the link between a biased article and the next one.
 
 ### Does the bias of current article impact the next step in the path ?
